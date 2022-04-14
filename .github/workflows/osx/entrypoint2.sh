@@ -42,7 +42,7 @@ cp /usr/local/bin/gfortran-11 /usr/local/bin/gfortran
 
 #################
 brew install root
-git clone https://gitlab.cern.ch/averbyts/tmdlib
+git clone https://gitlab-ci-token:glpat-HHs8pM118-nLqsAXqMTi@gitlab.cern.ch/averbyts/tmdlib
 
 cmake -S TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR 
 make -j 2 -C build
