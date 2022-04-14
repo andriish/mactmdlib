@@ -1,8 +1,6 @@
 #!/bin/sh -l
 set -x
 export TOP=$(pwd)
-mkdir LOCAL
-cd LOCAL
 #exit
 brew tap davidchall/hep
 brew install wget coreutils  
@@ -40,9 +38,10 @@ else
 fi
 export CXXFLAGS=-std=c++14
 cp /usr/local/bin/gfortran-11 /usr/local/bin/gfortran
-
-#################
 brew install root
+
+########################################################################
+
 git clone https://gitlab-ci-token:glpat-HHs8pM118-nLqsAXqMTi@gitlab.cern.ch/averbyts/tmdlib
 
 cmake -S TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR 
