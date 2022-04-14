@@ -3,6 +3,7 @@ set -x
 export TOP=$(pwd)
 mkdir LOCAL
 cd LOCAL
+exit
 brew tap davidchall/hep
 brew install wget coreutils  
 brew install gsl
