@@ -15,11 +15,11 @@ brew install libtool
 brew install pkg-config
 brew install binder
 brew install lhapdf
-brew install --cask basictex
-eval "$(/usr/libexec/path_helper)"
-export PATH=$PATH:/usr/local/bin:/usr/local//Cellar/gcc/11.1.0_1/libexec/gcc/x86_64-apple-darwin19/11.1.0/:/Library/TeX/texbin/
-sudo tlmgr update --self
-sudo tlmgr install sectsty collection-fontsrecommended
+#  brew install --cask basictex
+#  eval "$(/usr/libexec/path_helper)"
+#  export PATH=$PATH:/usr/local/bin:/usr/local//Cellar/gcc/11.1.0_1/libexec/gcc/x86_64-apple-darwin19/11.1.0/:/Library/TeX/texbin/
+#  sudo tlmgr update --self
+#  sudo tlmgr install sectsty collection-fontsrecommended
 #####
 
 which gfortran-11
@@ -44,6 +44,6 @@ brew install root
 
 git clone https://gitlab-ci-token:glpat-HHs8pM118-nLqsAXqMTi@gitlab.cern.ch/averbyts/tmdlib
 
-cmake -S TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR 
+cmake -S tmdlib/TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR 
 make -j 2 -C build
 make install -C build
