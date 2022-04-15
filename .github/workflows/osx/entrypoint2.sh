@@ -14,7 +14,7 @@ brew install automake
 brew install libtool 
 brew install pkg-config
 brew install binder
-brew install lhapdf --build-from-source
+#brew install lhapdf --build-from-source
 #  brew install --cask basictex
 #  eval "$(/usr/libexec/path_helper)"
 #  export PATH=$PATH:/usr/local/bin:/usr/local//Cellar/gcc/11.1.0_1/libexec/gcc/x86_64-apple-darwin19/11.1.0/:/Library/TeX/texbin/
@@ -39,6 +39,14 @@ fi
 export CXXFLAGS=-std=c++14
 cp /usr/local/bin/gfortran-11 /usr/local/bin/gfortran
 brew install root
+
+wget  https://www.hepforge.org/archive/lhapdf/LHAPDF-6.2.1.tar.gz
+tar zxvf LHAPDF-6.2.1.tar.gz
+cd LHAPDF-6.2.1
+./configure --prefix=/usr/local
+make -j 2  install
+cd ..
+
 
 ########################################################################
 
