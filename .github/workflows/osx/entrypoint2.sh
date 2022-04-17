@@ -50,7 +50,6 @@ cd ..
 find /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ | grep stdarg
 ########################################################################
 
-
 git clone https://gitlab-ci-token:glpat-HHs8pM118-nLqsAXqMTi@gitlab.cern.ch/averbyts/tmdlib -b cleanupfull --depth=1
 
 cmake -S tmdlib/TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR 
