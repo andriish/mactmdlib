@@ -36,7 +36,7 @@ else
    export F77=gfortran
    export LD=gfortran
 fi
-export CXXFLAGS=-std=c++14
+export CXXFLAGS=-std=c++17
 cp /usr/local/bin/gfortran-11 /usr/local/bin/gfortran
 brew install root
 
@@ -52,6 +52,6 @@ find /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ | grep stdarg
 
 git clone https://gitlab-ci-token:glpat-HHs8pM118-nLqsAXqMTi@gitlab.cern.ch/averbyts/tmdlib -b cleanupfull --depth=1
 
-cmake -S tmdlib/TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR 
+cmake -S tmdlib/TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR -DTMDLIB_CXX_STANDARD=17
 make -j 2 -C build
 make install -C build
