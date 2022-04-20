@@ -55,3 +55,4 @@ git clone https://gitlab-ci-token:glpat-HHs8pM118-nLqsAXqMTi@gitlab.cern.ch/aver
 cmake -S tmdlib/TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR -DTMDLIB_CXX_STANDARD=17 -DRERUN_BINDER=ON
 make -j 2 -C build
 make install -C build
+
