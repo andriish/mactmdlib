@@ -48,6 +48,7 @@ make -j 2  install
 cd ..
 
 find /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ | grep stdarg
+ls /usr/local/Cellar/llvm
 ########################################################################
 
 git clone https://gitlab-ci-token:glpat-HHs8pM118-nLqsAXqMTi@gitlab.cern.ch/averbyts/tmdlib -b cleanupfull --depth=1
