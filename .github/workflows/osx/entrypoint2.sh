@@ -53,7 +53,7 @@ ls /usr/local/Cellar/llvm
 
 git clone https://gitlab-ci-token:glpat-HHs8pM118-nLqsAXqMTi@gitlab.cern.ch/averbyts/tmdlib -b cleanupfull --depth=1
 
-cmake -S tmdlib/TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR -DTMDLIB_CXX_STANDARD=17 -DRERUN_BINDER=OFF -DCMAKE_CXX_COMPILER=g++-11
+cmake -S tmdlib/TMDlib2-yaml -Bbuild -DCMAKE_INSTALL_PREFIX=$(pwd)/TESTINSTALLDIR -DTMDLIB_CXX_STANDARD=17 -DRERUN_BINDER=ON -DCMAKE_CXX_COMPILER=g++-11
 make -j 2 -C build
 make install -C build
 
